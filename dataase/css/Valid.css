@@ -1,0 +1,31 @@
+/* Reset default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #333; /* Dark background color for header */
+    color: #fff; /* Text color for links */
+    padding: 10px 20px; /* Add padding inside the header */
+}
+
+/* Style the header navigation menu */
+.header ul {
+    list-style-type: none; /* Remove default bullet points */
+    display: flex; /* Display list items horizontally */
+}
+
+.header li {
+    margin-right: 20px; /* Add space between menu items */
+}
+
+.header a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for links */
+}
+
+.header a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

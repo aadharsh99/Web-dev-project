@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Case Processing Flowchart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+        }
+        .box {
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .box-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .arrow-down {
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .arrow-down:before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid #000;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-title">Start</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Process Test Cases Loop</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Extract Test Case Data</div>
+        <div class="box-content">(Phone Model, Repair Type, Cost Estimate, Number of Repairs, Customer Name)</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Validate Phone Model</div>
+        <div class="box-content">(Alphabetic, Length 2-15 characters)</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Validate Repair Type</div>
+        <div class="box-content">(Alphabetic, Non-empty)</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Validate Cost Estimate</div>
+        <div class="box-content">(Positive whole number)</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Validate Number of Repairs</div>
+        <div class="box-content">(Between 1 and 5)</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Validate Customer Name</div>
+        <div class="box-content">(Non-empty, No leading/trailing spaces)</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Determine Overall Test Case Result</div>
+        <div class="box-content">(Pass if all validations succeed, Fail otherwise)</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Output Test Case Result</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">Continue Loop (Next Test Case)</div>
+        <div class="arrow-down"></div>
+    </div>
+
+    <div class="box">
+        <div class="box-title">End</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #007bff; /* Blue color for the button, you can change this */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
