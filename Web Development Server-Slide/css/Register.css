@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.container {
+  width: 500px;
+  margin: 25px auto;
+}
+
+form {
+  padding: 15px;
+  background: blue;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+form label,
+form input,
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 8px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+form button {
+  height: 30px;
+  line-height: 30px;
+  background:purple;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+form .error {
+  color: #ff0000;
+}
+h2{
+color: red;
+
+
+}
+
+	body {
+background-image: url("../Images/blue1.avif");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+fieldset{
+background: white;
+
+}
+input[type=text], select, textarea{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}

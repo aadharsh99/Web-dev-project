@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Fixing Store</title>
+</head>
+<body>
+    <h1>Welcome to the Phone Fixing Store!</h1>
+
+    <div>
+        <?php
+        // Array of available products with their details
+        $products = [
+            ['id' => 1, 'name' => 'iPhone Screen Replacement', 'price' => 100],
+            ['id' => 2, 'name' => 'Battery Replacement', 'price' => 50],
+            ['id' => 3, 'name' => 'Water Damage Repair', 'price' => 120],
+        ];
+
+        // Display each product with an "Add to Cart" link
+        foreach ($products as $product) {
+            echo "<p>{$product['name']} - \${$product['price']} ";
+            echo "<a href='cart.php?action=add&id={$product['id']}'>Add to Cart</a></p>";
+        }
+        ?>
+    </div>
+
+    <h2>Your Shopping Cart</h2>
+    <div>
+        <a href="cart.php">View Cart</a> <!-- Link to view the shopping cart -->
+    </div>
+
+    <?php
+    // Enable error reporting
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    ?>
+</body>
+</html>
